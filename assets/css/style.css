@@ -1,0 +1,282 @@
+:root {
+  --main-bg-color:rgb(198, 217, 247);
+  --mainDark-bg-color:rgb(198, 217, 247);
+  --nav-bg-color: orange;
+  --navDark-bg-color:rgb(224, 222, 222);
+  --main-font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --nav--font-family: sans-serif;
+  --main--font-size: 16px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.bg--color-change {
+  background-color: black;
+  color: white;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1, 5rem;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+button,
+input {
+  font-family: var(--nav--font-family);
+}
+
+a {
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  user-select: none;
+  cursor: pointer;
+}
+
+.header {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  background-color: var(--nav-bg-color);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img--logo {
+  width: 70%;
+  height: 70%;
+  border-radius: 75%;
+  margin: 5%;
+}
+
+.nav__input {
+  height: 20%;
+}
+
+.nav__menu {
+  display: flex;
+}
+
+.nav__list {
+  display: flex;
+  position: absolute;
+  right: 1%;
+  gap: 1rem;
+}
+
+.btn--close {
+  display: none;
+}
+
+#button--menu {
+  display: none;
+}
+
+.nav__input {
+  margin-top: 10%;
+  margin-left: 3%;
+}
+
+footer {
+  background-color: var(--nav-bg-color);
+}
+
+#search--value {
+  width: 33rem;
+  right: 44%;
+}
+
+.search--button {
+  width: 30%;
+  background-color: black;
+  color: white;
+  font-family: var(--nav--font-family);
+}
+
+#movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie_item {
+  margin: 1rem;
+  text-align: center;
+  max-width: 500px;
+}
+
+.title {
+  padding-top: 16px;
+}
+
+.movies__title {
+  font-family: var(--main-font-family);
+  text-align: center;
+  margin: 5%;
+}
+
+.about__container {
+  width: 100%;
+  text-align: center;
+}
+
+.about__title {
+  font-family: var(--main-font-family);
+  font-size: 3rem;
+  margin: 5%;
+}
+
+.about__img {
+  width: 40%;
+  margin: 10% 29%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__content {
+  font-family: var(--main-font-family);
+}
+
+@media (max-width: 768px) {
+  .header {
+    width: 100%;
+    height: 15%;
+    top: 0;
+    background-color: var(--nav-bg-color);
+  }
+  .nav {
+    width: 100%;
+    display: flex;
+  }
+  .nav__menu {
+    width: 100vw;
+    height: 40%;
+    font-style: var(--main-font-family);
+    display: none;
+    justify-content: center;
+    position: fixed;
+    z-index: 2;
+    background-color: var(--nav-bg-color);
+  }
+  .nav__list {
+    display: inline-block;
+    margin: 10% 40%;
+  }
+  .nav__items {
+    display: flex;
+    font-size: 2rem;
+    margin: 20% 10%;
+    font-family: var(--main-font-family);
+    font-weight: bolder;
+  }
+  .nav__link {
+    display: flex;
+  }
+  .btn--close {
+    right: 2%;
+    position: absolute;
+    font-size: xx-large;
+  }
+  .img--logo {
+    height: 50%;
+    width: 70%;
+    margin: 20%;
+  }
+  .nav__input {
+    height: 20%;
+    margin: 8% 0 1% 1%;
+  }
+  #search--value {
+    width: 13rem;
+    right: 44%;
+  }
+  .search--button {
+    width: 10%;
+  }
+  #button--menu {
+    margin-left: 10%;
+    font-size: x-large;
+    display: inline;
+  }
+  .show--menu {
+    display: inline-block;
+  }
+  .about__content {
+    font-family: var(--main-font-family);
+    font-size: 1rem;
+    text-align: justify;
+    padding-left: 25%;
+    width: 70%;
+  }
+  .about__title {
+    margin-top: 20%;
+  }
+  .about__title span {
+    color: var(--nav-bg-color);
+  }
+  .about__btnClose {
+    font-size: 3rem;
+    right: 0;
+    position: absolute;
+    top: 0;
+  }
+  .about__img {
+    width: 50%;
+    margin: 10% 29%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .movie_img {
+    width: 75%;
+  }
+  .movie_item {
+    font-family: var(--main-font-family);
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  .movies__title {
+    font-family: var(--main-font-family);
+    text-align: center;
+    color: orange;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .btn--dark {
+    text-align: center;
+    border: 1px black;
+  }
+  .btn--close {
+    display: inline-block;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

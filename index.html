@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- ----------------------------------Header------------------------- ----->
+     <header class="header">
+        <nav class="nav containter">
+            <a href="./"><img src="./assets/images/movies-logo.jpg" class="img--logo"></a>
+            <div class="nav__menu" id="menu">
+                
+                <button class=" btn--close" id="btn--close">
+                    <i class='bx bx-x'></i>
+                </button>
+                <ul class="nav__list">
+                    <li class="nav__items">
+                        <a href="./" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="./about.html" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__items">
+                        <button class="nav__link" id="btn--dark">Dark On/Off</butto>
+                    </li>
+                    
+                </ul>
+                
+            </div>
+                <div class="nav__search"></div>
+                        <input type="text" placeholder="Search Movie" class=" nav__input" id="search--value">
+                    
+                        <input type="button" value="Find" class="search--button nav__input" id="btn--search" >
+
+                    
+                 </div>
+                    
+                 <button class="nav__input" id="button--menu">
+                    <i class='bx bx-menu'></i>
+                 </button>     
+        </nav>
+     </header>
+     <!-- ----------------------------------/Header--Starting Home----------------------- ----->
+
+     <div class="movies__container" id="result--movies"></div>
+      
+     <section class="movies__trending">
+     <h1 class="movies__title">Trending Movies</h1>
+     <div class="movies__container" id="movies"></div>
+    </section>
+    
+
+    <footer class="footer">
+        <div class="foot__container">
+            <h3>copyright: Jorge Ortega</h3>
+            <h3>Email: jorgelos@hotmail.com</h3>
+
+        </div>
+    </footer>
+      
+    <script src="./assets/script.js"></script>
+
+</body>
+</html>
